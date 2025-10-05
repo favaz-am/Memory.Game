@@ -1,11 +1,20 @@
-#root {
+/* #root {
   max-width: 1280px;
   width: 100%; 
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   overflow-x: hidden;
-} 
+}  */
+#root {
+  width: 100vw;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+   overflow-x: hidden;
+}
+
 
 
 
@@ -36,7 +45,7 @@ main {
 }
 
 
- body {
+ /* body {
   background: radial-gradient(circle at top left, #f0f4f8, #dce3ec);
   min-height: 100vh;
   margin: 0;
@@ -45,6 +54,18 @@ main {
   justify-content: center;
   align-items: flex-start; 
   flex-direction: column;
+} */
+body {
+  background: radial-gradient(circle at top left, #f0f4f8, #dce3ec);
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* ✅ center fully */
+  flex-direction: column;
+  width: 100vw; /* ✅ ensure full width */
+  box-sizing: border-box;
 }
 
 
