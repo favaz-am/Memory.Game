@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  justify-content: space-between; /* left, center, right */
+  align-items: center;
+  background-color: #faf9ff;
+  padding: 0.8rem 1.5rem;
+  color: #3a3a7a;
+  font-size: 0.95rem;
+  position: fixed;   /* make it stick */
+  bottom: 0;
+  left: 0;
+  width: 100%;       /* full width */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05); /* small shadow for separation */
+}
+
+
+.footer-left {
+  text-align: left;
+  color: #31318955;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #3a3a7a;
+  
+}
+
+.footer-right {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.footer-right .icon {
+  color: #3a3a7a;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-right .icon:hover {
+  color: #1d4ed8; /* hover blue */
+}
+
+.footer-right svg {
+  width: 20px;
+  height: 20px;
+}
