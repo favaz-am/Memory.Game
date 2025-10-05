@@ -1,6 +1,5 @@
 import { memo, useEffect, useMemo, useState } from "react";
 import confetti from "canvas-confetti";
-// import Header from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
 import "./App.css";
 
@@ -37,8 +36,8 @@ function App() {
           startGame();
           setTimeLeft(60);
         } else {
-          setIsGameCompleted(true); // game finished
-          ConfettiSideCannons(); // launch confetti
+          setIsGameCompleted(true); 
+          ConfettiSideCannons(); 
         }
       }, 1200);
     }
@@ -64,16 +63,16 @@ function App() {
      setIsGameCompleted(false); 
 
 
-    const pairCount = Math.pow(2, level); // 2, 4, 8 ...
+    const pairCount = Math.pow(2, level); 
 
-    // 1. Pick random unique icons
+    
     const shuffledIcons = [...gameIcons].sort(() => 0.5 - Math.random());
     const selectedIcons = shuffledIcons.slice(0, pairCount);
 
-    // 2. Duplicate to create pairs
+    
     const duplicateIcons = [...selectedIcons, ...selectedIcons];
 
-    // 3. Shuffle the duplicate icons
+    
     const newGameIcons = duplicateIcons
       .sort(() => 0.5 - Math.random())
       .map((emoji, index) => ({
@@ -136,7 +135,7 @@ function App() {
     getCardFlipped();
   }, [pieces]);
 
-  //confiti
+ 
   const ConfettiSideCannons = () => {
     const end = Date.now() + 5 * 1000;
     const colors = ["#4515caff", "#d41d1dff", "#1ac835ff", "#e3e935ff"];
@@ -170,15 +169,15 @@ function App() {
   return (
     
     <main>
-      {/* <Header/> */}
+      
       <h2>Memory Card Game</h2>
 
       {!gameStarted && (
         <button
           onClick={() => {
             setGameStarted(true);
-            startGame(); // initialize cards
-            setTimeLeft(60); // start timer
+            startGame(); 
+            setTimeLeft(60); 
           }}
           className="start-btn"
         >

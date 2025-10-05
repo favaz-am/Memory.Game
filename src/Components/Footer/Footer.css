@@ -1,16 +1,16 @@
 .footer {
   display: flex;
-  justify-content: space-between; /* left, center, right */
+  justify-content: space-between;
   align-items: center;
   background-color: #faf9ff;
   padding: 0.8rem 1.5rem;
   color: #3a3a7a;
   font-size: 0.95rem;
-  position: fixed;   /* make it stick */
+  position: fixed; 
   bottom: 0;
   left: 0;
-  width: 100%;       /* full width */
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.05); /* small shadow for separation */
+  width: 100%;      
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
 
 
@@ -41,7 +41,7 @@
 }
 
 .footer-right .icon:hover {
-  color: #1d4ed8; /* hover blue */
+  color: #1d4ed8; 
 }
 
 .footer-right svg {
